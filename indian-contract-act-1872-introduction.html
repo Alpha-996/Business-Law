@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Notes: The Indian Contract Act, 1872</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a better look and feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A light gray background */
+        }
+        .accordion-header {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-header:hover {
+            background-color: #f1f5f9; /* Slightly darker gray on hover */
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+            padding: 0 1.5rem; /* p-6 */
+        }
+        .accordion-content.active {
+            max-height: 1000px; /* A large enough value to show all content */
+            padding: 1.5rem; /* p-6 */
+        }
+        .arrow-icon {
+            transition: transform 0.3s ease;
+        }
+        .accordion-header.active .arrow-icon {
+            transform: rotate(90deg);
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Main Title -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900">The Indian Contract Act, 1872</h1>
+            <p class="text-slate-500 mt-2 text-lg">An interactive guide to the fundamentals.</p>
+        </header>
+
+        <!-- Key Info Section -->
+        <section class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+            <div class="card p-6 text-center">
+                <h3 class="font-semibold text-lg text-indigo-600 mb-2">When?</h3>
+                <p class="text-2xl font-bold">1 Sept 1872</p>
+            </div>
+            <div class="card p-6 text-center">
+                <h3 class="font-semibold text-lg text-indigo-600 mb-2">Where?</h3>
+                <p class="text-2xl font-bold">Whole of India</p>
+            </div>
+            <div class="card p-6 text-center">
+                <h3 class="font-semibold text-lg text-indigo-600 mb-2">Why?</h3>
+                <p class="text-2xl font-bold">To Document Evidence</p>
+            </div>
+        </section>
+
+        <!-- The Journey to a Contract -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-center mb-6">The Journey to a Contract</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <div class="card p-4 text-center"><strong>Offer</strong> + <strong>Acceptance</strong></div>
+                <div class="text-2xl font-bold text-indigo-500">&rarr;</div>
+                <div class="card p-4 text-center"><strong>Promise</strong></div>
+                <div class="text-2xl font-bold text-indigo-500">&rarr;</div>
+                <div class="card p-4 text-center"><strong>Agreement</strong><br><span class="text-sm text-slate-500">(Promise + Consideration)</span></div>
+                <div class="text-2xl font-bold text-indigo-500">&rarr;</div>
+                <div class="card p-4 text-center bg-indigo-600 text-white"><strong>Contract</strong><br><span class="text-sm text-indigo-200">(Agreement + Enforceability)</span></div>
+            </div>
+        </section>
+
+        <!-- Accordion Sections -->
+        <div id="accordion-container" class="space-y-4">
+
+            <!-- Section 1: Essentials to Create a Contract -->
+            <div class="card overflow-hidden">
+                <div class="accordion-header p-6 flex justify-between items-center">
+                    <h2 class="text-xl font-bold">Essentials of a Valid Contract</h2>
+                    <svg class="arrow-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </div>
+                <div class="accordion-content bg-slate-50">
+                    <ul class="space-y-4">
+                        <li><strong>Two Parties:</strong> Both Natural and Artificial persons. <span class="text-sm text-slate-500 block">Exception: State of Gujarat vs. Ramanlal S and Co.</span></li>
+                        <li><strong>Legal Relationship:</strong> Intent to create legal obligations. <span class="text-sm text-slate-500 block">Exception: Balfour v. Balfour (1919) - Domestic agreements are generally not contracts.</span></li>
+                        <li><strong>Legal Formalities:</strong> Must be fulfilled, e.g., using stamp paper for immovable properties.</li>
+                        <li><strong>Certainty:</strong> The object and consideration must be clear and certain.</li>
+                        <li><strong>Possibility of Performance:</strong> The act must be possible to perform.</li>
+                        <li><strong>Legal Object:</strong> The purpose of the agreement must be lawful.</li>
+                        <li><strong>Lawful Consideration:</strong> The "something in return" must be lawful.</li>
+                        <li><strong>Competency:</strong> Parties must be capable of contracting (not minors, of sound mind, etc.).</li>
+                        <li><strong>Free Consent:</strong> Consent must not be obtained by coercion, fraud, etc.</li>
+                        <li><strong>Agreement Not Expressly Declared Void:</strong> The agreement must not be one which the law declares to be void.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 2: Types of Contracts (By Validity) -->
+            <div class="card overflow-hidden">
+                <div class="accordion-header p-6 flex justify-between items-center">
+                    <h2 class="text-xl font-bold">Types of Contracts (By Validity)</h2>
+                    <svg class="arrow-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </div>
+                <div class="accordion-content bg-slate-50">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 border border-green-200 bg-green-50 rounded-lg"><strong>Valid:</strong> An agreement which is binding and enforceable.</div>
+                        <div class="p-4 border border-yellow-200 bg-yellow-50 rounded-lg"><strong>Void:</strong> A contract which ceases to be enforceable by law. (Was legal initially).</div>
+                        <div class="p-4 border border-orange-200 bg-orange-50 rounded-lg"><strong>Voidable:</strong> Enforceable at the option of one party but not at the option of the other.</div>
+                        <div class="p-4 border border-red-200 bg-red-50 rounded-lg"><strong>Illegal:</strong> A contract which the law forbids to be made.</div>
+                        <div class="p-4 border border-slate-200 bg-slate-100 rounded-lg"><strong>Unenforceable:</strong> A contract which is good in substance but cannot be enforced due to a technical defect.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Types of Contracts (By Formation) -->
+            <div class="card overflow-hidden">
+                <div class="accordion-header p-6 flex justify-between items-center">
+                    <h2 class="text-xl font-bold">Types of Contracts (By Formation)</h2>
+                    <svg class="arrow-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </div>
+                <div class="accordion-content bg-slate-50">
+                    <ul class="space-y-4">
+                        <li><strong>Express Contract:</strong> Terms are expressed by words spoken or written.</li>
+                        <li><strong>Implied Contract:</strong> Inferred from the actions, conduct, circumstances, or dealings of the parties. <span class="text-sm text-slate-500 block">Example: Tacit Contract (withdrawing cash from an ATM).</span></li>
+                        <li><strong>Quasi Contract:</strong> An obligation created by law, not by agreement, to prevent unjust enrichment.</li>
+                        <li><strong>E-Contract:</strong> Entered into using electronic means, like email or other electronic data interchange.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Section 4: Types of Contracts (By Performance) -->
+            <div class="card overflow-hidden">
+                <div class="accordion-header p-6 flex justify-between items-center">
+                    <h2 class="text-xl font-bold">Types of Contracts (By Performance)</h2>
+                    <svg class="arrow-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </div>
+                <div class="accordion-content bg-slate-50">
+                    <ul class="space-y-4">
+                        <li><strong>Executed Contract:</strong> Where both parties have performed their respective obligations.</li>
+                        <li><strong>Executory Contract:</strong> Where the obligations are to be performed in the future.
+                            <ul class="list-disc list-inside mt-2 pl-4 space-y-1 text-slate-600">
+                                <li><strong>Unilateral:</strong> Only one party has to perform their obligation.</li>
+                                <li><strong>Bilateral:</strong> Both parties have to perform their obligations.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for accordion functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionContainer = document.getElementById('accordion-container');
+
+            // Event delegation for better performance
+            accordionContainer.addEventListener('click', function(event) {
+                const header = event.target.closest('.accordion-header');
+                
+                // Check if a header was clicked
+                if (!header) {
+                    return;
+                }
+
+                const content = header.nextElementSibling;
+                const isActive = header.classList.contains('active');
+
+                // Optional: Close all other accordions when one is opened
+                // Comment this out if you want multiple sections to be open at once
+                const allHeaders = accordionContainer.querySelectorAll('.accordion-header');
+                allHeaders.forEach(h => {
+                    if (h !== header) {
+                        h.classList.remove('active');
+                        h.nextElementSibling.classList.remove('active');
+                    }
+                });
+                
+                // Toggle the clicked accordion
+                if (isActive) {
+                    header.classList.remove('active');
+                    content.classList.remove('active');
+                } else {
+                    header.classList.add('active');
+                    content.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
